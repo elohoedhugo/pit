@@ -15,6 +15,7 @@
 }
 
 #logodiv{
+    display: block;
     background-color: #000000;
     height: 40px;
     width: 40px;
@@ -162,6 +163,12 @@ height: 100%;
 #secondp{
     cursor: pointer;
     color: #2C3461;
+}
+
+@media(max-width: 767px){
+  #logodiv{
+    display: none;
+  }
 }
 
 @media(max-width: 466px){
