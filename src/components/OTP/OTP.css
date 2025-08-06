@@ -31,7 +31,7 @@
     height: 22px;
 }
 
-.heading{
+/* .heading{
     text-align: center;
 }
 
@@ -96,10 +96,11 @@
     width: 50%;
     background-color: #C4C6CA;
     
-}
+} */
 
 #otpheading{
     font-size: 13px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -211,7 +212,7 @@ input:-webkit-autofill {
     cursor: pointer;
 }
 
-#lastdiv{
+/* #lastdiv{
     display: flex;
     gap: 6px;
     font-size: 13px;
@@ -223,7 +224,8 @@ input:-webkit-autofill {
 #secondp{
     cursor: pointer;
     color: #2C3461;
-}
+} */
+
 
 @media(max-width: 767px){
   #logodiv{

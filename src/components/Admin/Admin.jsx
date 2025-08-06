@@ -29,7 +29,7 @@ const Admin = () => {
           <div id="logodiv">
             <img src={whiteLogo} alt="" id="whitelogo" />
           </div>
-          <p className="heading" id="heading1">
+          {/* <p className="heading" id="heading1">
             Welcome back!
           </p>
           <p className="heading" id="heading2">
@@ -54,7 +54,7 @@ const Admin = () => {
             <span>or</span>
             <hr className="hr" />
           </div>
-  
+   */}
           <p id="heading">Please, contact admin for further instructions.</p>
     
           
@@ -71,7 +71,7 @@ const Admin = () => {
         
           
           <button type="submit" className= "loginbutton" > Return </button>
-          <div id="lastdiv"> <p className="lastp">Still haven't created an account? Sign up</p><p className="lastp" id="secondp">here</p></div>
+          {/* <div id="lastdiv"> <p className="lastp">Still haven't created an account? Sign up</p><p className="lastp" id="secondp">here</p></div> */}
           </form>
         </div>
       );

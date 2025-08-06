@@ -156,7 +156,8 @@ const Login = () => {
 
       <p className="forgotP">Forgot your password? </p>
       <button type="submit" className={`loginbutton ${password && email && isValidEmail(email)? "active" : "inactive"}`} disabled={!(email && password && isValidEmail(email))} >Log In</button>
-      <div id="lastdiv"> <p className="lastp">Still haven't created an account? Sign up</p><p className="lastp" id="secondp">here</p></div>
+      {/* <div id="lastdiv"> <p className="lastp">Still haven't created an account? Sign up</p><p className="lastp" id="secondp">here</p></div> */}
+      <button id="secondbutton">Manual Hot / Cold Wallet Integration </button>
       </form>
     </div>
   );

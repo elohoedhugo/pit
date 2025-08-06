@@ -31,7 +31,7 @@
     height: 22px;
 }
 
-.heading{
+/* .heading{
     text-align: center;
 }
 
@@ -96,9 +96,10 @@
     width: 50%;
     background-color: #C4C6CA;
     
-}
+} */
 
 #heading{
+  margin-top: 30px;
     font-size: 13px;
     margin-bottom: 10px;
     color: #5A5E66;
