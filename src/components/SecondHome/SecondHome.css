@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homepage2{
+ background-color: black;
+ min-height: 100vh;
+ color: white;
+ padding: 50px;
+ width: 100%;
+}
+
+
+
+#hheadingdiv{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.react-icon{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#question-icon{
+    margin-left: auto;
+    color: #555555;
+}
+
+#hheadingp{
+    font-size: 24px;
+}
+.otherdiv{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 600px;
+    margin-inline: auto;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.otherdiv:hover{
+    transform: translateY(-5px);
+    background-color: #3e3e3e;
+}
+
+#div2{
+    
+}
+
+.imagecontainer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#imgcon1{
+ 
+    background-color: white;
+}
+
+#newimage{
+    width: 30px;
+    height: 30px;
+}
+
+.textdiv{
+    width: 480px;
+}
+
+.textdivheading{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.textdivp{
+    color: #666666;
+    line-height: 30px;
+    
+}
+
+.arrow-right{
+    width: 30px;
+    height: 30px;
+    color: #555555;
+    margin-left: auto;
+}
+#div3{
+}
+
+#imgcon2{
+ 
+    background-color: #333333;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+    #homepage2 {
+        padding: 14px;
+    }
+
+    .otherdiv{
+        gap: 10px;
+        width: unset;
+    }
+
+    .textdiv{
+        width: unset;
+    }
+
+    .imagecontainer{
+        width: 40px;
+        height: 40px;
+    }
+
+    #newimage{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+
+
