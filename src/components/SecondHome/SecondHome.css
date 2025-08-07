@@ -88,7 +88,7 @@
 
 .textdivp{
     color: #666666;
-    line-height: 30px;
+    line-height: 25px;
     
 }
 
@@ -126,8 +126,8 @@
 }
 
     .otherdiv{
-        gap: 10px;
-        padding-inline: 5px;
+        gap: 15px;
+        padding-inline: 10px;
         width: unset;
     }
 
