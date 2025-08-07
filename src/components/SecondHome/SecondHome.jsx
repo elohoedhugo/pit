@@ -2,7 +2,7 @@ import React from "react";
 import "../SecondHome/SecondHome.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaRegQuestionCircle } from "react-icons/fa";
-import newImage from "../../assets/newImage.svg";
+import newImage from "../../assets/newimage.svg";
 import cloudImage from "../../assets/cloudImage.svg"
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
