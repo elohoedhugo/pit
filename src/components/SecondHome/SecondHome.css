@@ -121,7 +121,7 @@
 
 .modal{
     padding: 10px;
-    width: 30%;
+    width: 450px;
     background-color: white;
     border-radius: 20px;
 }
@@ -135,7 +135,6 @@
 }
 
 #modal3{
-    height: 450px;
     border-radius:12px;
     color: black;
     padding-inline: 20px;
@@ -290,6 +289,10 @@
     #newimage{
         width: 25px;
         height: 25px;
+    }
+
+    .modal{
+        width: 390px;
     }
 }
 
