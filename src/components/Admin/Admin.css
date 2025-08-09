@@ -114,9 +114,9 @@
 
 
 #circling{
-  width: 80px;
-  height: 80px;
-  border: 8px solid #A0A3A8;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #A0A3A8;
   border-top-color: transparent;  /* makes a gap */
   border-radius: 50%;
   animation: spin 1.5s linear infinite;

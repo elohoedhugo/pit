@@ -147,9 +147,9 @@ const Login = () => {
         )}
         <div id="eyeicondiv" onClick={() => setEyeOpen((prev) => !prev)}>
           {eyeOpen ? (
-            <IoMdEye className="eyeIcon" />
-          ) : (
             <IoMdEyeOff className="eyeIcon" />
+          ) : (
+            <IoMdEye className="eyeIcon" />
           )}
           
         </div>
